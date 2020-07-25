@@ -68,13 +68,12 @@
 
     <div class="video-foreground">
 
-      <iframe src="https://www.youtube.com/embed/rgNlWypWmtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/rgNlWypWmtw?amp;autoplay=1&amp;playlist=rgNlWypWmtw&amp;loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-    </div>
 
   </div>
 
-<h1>악동뮤지션</h1>
+<h1>spiral</h1>
 
 
 
