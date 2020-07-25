@@ -1,37 +1,93 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
 
-You can use the [editor on GitHub](https://github.com/teamtim16/asdasda/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<html lang="en">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<head>
 
-### Markdown
+    <meta charset="UTF-8">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <title>유튜브 동영상 배경</title>
 
-```markdown
-Syntax highlighted code block
+    <style type="text/css">
 
-# Header 1
-## Header 2
-### Header 3
+    * { box-sizing: border-box; }
 
-- Bulleted
-- List
+    .video-background {
 
-1. Numbered
-2. List
+        background: #000;
 
-**Bold** and _Italic_ and `Code` text
+        position: fixed;
 
-[Link](url) and ![Image](src)
-```
+        top: 0; right: 0; bottom: 0; left: 0;
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+        z-index: -99;
 
-### Jekyll Themes
+    }
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/teamtim16/asdasda/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    .video-foreground,
 
-### Support or Contact
+    .video-background iframe {
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        pointer-events: none;
+
+    }
+
+    @media (min-aspect-ratio: 16/9) {
+
+    .video-foreground { height: 300%; top: -100%; }
+
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+
+    .video-foreground { width: 300%; left: -100%; }
+
+    }
+
+    h1{ color:white;}
+
+    </style>
+
+    
+
+</head>
+
+<body>
+
+<div class="video-background">
+
+    <div class="video-foreground">
+
+      <iframe src="https://www.youtube.com/embed/rgNlWypWmtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+  </div>
+
+<h1>악동뮤지션</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
